@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Navbar</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <form class="form-inline my-2 my-lg-0 mr-auto">
+                <div class="input-group search-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="What services are you looking for?"
+                        aria-label="Search">
+                </div>
+                <div class="input-group ml-2 location-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Where do you need it?" aria-label="Location">
+                </div>
+                <div class="input-group ml-2 category-group">
+                    <select class="custom-select">
+                        <option selected>Choose category</option>
+                        <option value="1">Category 1</option>
+                        <option value="2">Category 2</option>
+                        <option value="3">Category 3</option>
+                    </select>
+                </div>
+                <button class="btn btn-outline-primary ml-2" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="countryDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="/download.png" alt="Country Flag" width="25" height="20">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="countryDropdown">
+                        <a class="dropdown-item" href="#">Country 1</a>
+                        <a class="dropdown-item" href="#">Country 2</a>
+                    </div>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" href="#"><i class="fa-regular fa-heart icons"></i></a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" href="#"><i class="fa-light fa-bell icons"></i></a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" href="#"><i class="fa-regular fa-comment-dots icons"></i></a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping icons"></i></a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" href="#"><i class="fa-regular fa-user icons"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="category-bar">
+        <a href="#">Digital services</a>
+        <a href="#">Retail and E-Commerce</a>
+        <a href="#">Fashion and Apparel</a>
+        <a href="#">Food and Dining</a>
+        <a href="#">Hospitality and Travel</a>
+        <a href="#">Jobs and Employment</a>
+        <a href="#">Healthcare and Wellness</a>
+        <a href="#">Local Services and Task Outsourcing</a>
+        <a href="#">Transportation and Ridesharing</a>
+    </div>
+    <div class="filter-bar">
+        <div class="filters">
+            <div class="filter-item">Filters:</div>
+            <div class="filter-item">
+                <select>
+                    <option>Category</option>
+                </select>
+            </div>
+            <div class="filter-item">Service Options</div>
+            <div class="filter-item">Budget</div>
+            <div class="filter-item">Ratings</div>
+            <div class="filter-item">Delivery Time</div>
+        </div>
+        <div class="sort-by">
+            <span>Sort by:</span>
+            <select>
+                <option>Shortest Distance</option>
+                <option>Highest Rating</option>
+                <option>Lowest Price</option>
+            </select>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="custom-card">
+            <img src="/images/christian-lambert-vmIWr0NnpCQ-unsplash.jpg">
+            <div class="custom-card-body">
+                <h5 class="custom-card-title">Tranquil Waterside Retreat: Lakeside Luxury Hotel</h5>
+                <p class="custom-card-text">store/brand name • <span class="text-warning"><i class="fas fa-star"></i>
+                        4.5</span> (123)</p>
+                <div class="price">
+                    <span class="text-success">USD 17.99</span>
+                    <span class="strikethrough"><span>USD 19.99</span></span>
+                </div>
+                <p class="custom-card-text">(10% off)</p>
+                <p class="custom-card-text">2.5 Km away</p>
+            </div>
+            <div class="custom-card-footer">
+                <a href="#" class="btn">Add to bag</a>
+                <div class="footer-icons">
+                    <small><i class="fas fa-balance-scale"></i></small>
+                    <small><i class="fas fa-share-alt"></i></small>
+                </div>
+            </div>
+            <div class="card-icons">
+                <a href="#"><i class="fas fa-heart"></i></a>
+            </div>
+        </div>
+        <div class="custom-card">
+            <img src="/images/christian-lambert-vmIWr0NnpCQ-unsplash.jpg">
+            <div class="custom-card-body">
+                <h5 class="custom-card-title">Tranquil Waterside Retreat: Lakeside Luxury Hotel</h5>
+                <p class="custom-card-text">store/brand name • <span class="text-warning"><i class="fas fa-star"></i>
+                        4.5</span> (123)</p>
+                <div class="price">
+                    <span class="text-success">USD 17.99</span>
+                    <span class="strikethrough"><span>USD 19.99</span></span>
+                </div>
+                <p class="custom-card-text">(10% off)</p>
+                <p class="custom-card-text">2.5 Km away</p>
+            </div>
+            <div class="custom-card-footer">
+                <a href="#" class="btn">Add to bag</a>
+                <div class="footer-icons">
+                    <small><i class="fas fa-balance-scale"></i></small>
+                    <small><i class="fas fa-share-alt"></i></small>
+                </div>
+            </div>
+            <div class="card-icons">
+                <a href="#"><i class="fas fa-heart"></i></a>
+            </div>
+        </div>
+        <div class="custom-card mx-2 special-card">
+            <div>View full screen map</div>
+            <div>
+                <img src="path-to-map-icon" alt="Map Icon">
+                search result 1
+                on map
+            </div>
+            <div>
+                <img src="path-to-map-icon" alt="Map Icon">
+                search result 2
+                on map
+            </div>
+            <div>
+                <img src="path-to-map-icon" alt="Map Icon">
+                search result 3
+                on map
+            </div>
+        </div>
+        <div class="custom-card">
+            <img src="/images/christian-lambert-vmIWr0NnpCQ-unsplash.jpg">
+            <div class="custom-card-body">
+                <h5 class="custom-card-title">Tranquil Waterside Retreat: Lakeside Luxury Hotel</h5>
+                <p class="custom-card-text">store/brand name • <span class="text-warning"><i class="fas fa-star"></i>
+                        4.5</span> (123)</p>
+                <div class="price">
+                    <span class="text-success">USD 17.99</span>
+                    <span class="strikethrough"><span>USD 19.99</span></span>
+                </div>
+                <p class="custom-card-text">(10% off)</p>
+                <p class="custom-card-text">2.5 Km away</p>
+            </div>
+            <div class="custom-card-footer">
+                <a href="#" class="btn">Add to bag</a>
+                <div class="footer-icons">
+                    <small><i class="fas fa-balance-scale"></i></small>
+                    <small><i class="fas fa-share-alt"></i></small>
+                </div>
+            </div>
+            <div class="card-icons">
+                <a href="#"><i class="fas fa-heart"></i></a>
+            </div>
+        </div>
+        <div class="custom-card">
+            <img src="/images/christian-lambert-vmIWr0NnpCQ-unsplash.jpg">
+            <div class="custom-card-body">
+                <h5 class="custom-card-title">Tranquil Waterside Retreat: Lakeside Luxury Hotel</h5>
+                <p class="custom-card-text">store/brand name • <span class="text-warning"><i class="fas fa-star"></i>
+                        4.5</span> (123)</p>
+                <div class="price">
+                    <span class="text-success">USD 17.99</span>
+                    <span class="strikethrough"><span>USD 19.99</span></span>
+                </div>
+                <p class="custom-card-text">(10% off)</p>
+                <p class="custom-card-text">2.5 Km away</p>
+            </div>
+            <div class="custom-card-footer">
+                <a href="#" class="btn">Add to bag</a>
+                <div class="footer-icons">
+                    <small><i class="fas fa-balance-scale"></i></small>
+                    <small><i class="fas fa-share-alt"></i></small>
+                </div>
+            </div>
+            <div class="card-icons">
+                <a href="#"><i class="fas fa-heart"></i></a>
+            </div>
+        </div>
+        <div class="custom-card">
+            <img src="/images/christian-lambert-vmIWr0NnpCQ-unsplash.jpg">
+            <div class="custom-card-body">
+                <h5 class="custom-card-title">Tranquil Waterside Retreat: Lakeside Luxury Hotel</h5>
+                <p class="custom-card-text">store/brand name • <span class="text-warning"><i class="fas fa-star"></i>
+                        4.5</span> (123)</p>
+                <div class="price">
+                    <span class="text-success">USD 17.99</span>
+                    <span class="strikethrough"><span>USD 19.99</span></span>
+                </div>
+                <p class="custom-card-text">(10% off)</p>
+                <p class="custom-card-text">2.5 Km away</p>
+            </div>
+            <div class="custom-card-footer">
+                <a href="#" class="btn">Add to bag</a>
+                <div class="footer-icons">
+                    <small><i class="fas fa-balance-scale"></i></small>
+                    <small><i class="fas fa-share-alt"></i></small>
+                </div>
+            </div>
+            <div class="card-icons">
+                <a href="#"><i class="fas fa-heart"></i></a>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example" class="pagination-container">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#"><<a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">></a></li>
+        </ul>
+    </nav>
+    <div class="container my-5">
+        <h2 class="my-4">Relevant Brands/Stores</h2>
+        <div class="row text-center">
+            <div class="col-md-2 col-4">
+                <div class="brand-logo rounded-circle d-flex align-items-center justify-content-center"></div>
+                <p class="brand-name">Brand name</p>
+                <div class="star-rating">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="text-muted">(123)</span>
+                </div>
+            </div>
+            <div class="col-md-2 col-4">
+                <div class="brand-logo rounded-circle d-flex align-items-center justify-content-center"></div>
+                <p class="brand-name">Brand name</p>
+                <div class="star-rating">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="text-muted">(123)</span>
+                </div>
+            </div>
+            <div class="col-md-2 col-4">
+                <div class="brand-logo rounded-circle d-flex align-items-center justify-content-center"></div>
+                <p class="brand-name">Brand name</p>
+                <div class="star-rating">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="text-muted">(123)</span>
+                </div>
+            </div>
+            <div class="col-md-2 col-4">
+                <div class="brand-logo rounded-circle d-flex align-items-center justify-content-center"></div>
+                <p class="brand-name">Brand name</p>
+                <div class="star-rating">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="text-muted">(123)</span>
+                </div>
+            </div>
+            <div class="col-md-2 col-4">
+                <div class="brand-logo rounded-circle d-flex align-items-center justify-content-center"></div>
+                <p class="brand-name">Brand name</p>
+                <div class="star-rating">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="text-muted">(123)</span>
+                </div>
+            </div>
+            <div class="col-md-2 col-4">
+                <div class="brand-logo rounded-circle d-flex align-items-center justify-content-center"></div>
+                <p class="brand-name">Brand name</p>
+                <div class="star-rating">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="text-muted">(123)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap cdn -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/5fb2c30548.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
